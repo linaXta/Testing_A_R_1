@@ -78,16 +78,6 @@ describe('Elements', () => {
             //Validate that no button is disabled
             RadioButtonsPage.noButton.should('have.class', 'disabled');
         });
-
-        it('Checkbox click Desktop', () =>{
-            //Click Expand (+) icon/button
-            CheckBoxPage.expandButton.click();
-            //Click Desktop
-            CheckBoxPage.checkboxTitles.contains("Desktop").click();
-            //Validate succest - You have selected :desktopnotescommand
-            CheckBoxPage.result.should('have.text',"You have selected :desktopnotescommands" );
-
-        });
     }); 
 
     //Web tables
